@@ -1,0 +1,128 @@
+.top__body {
+  font-family: 'PT Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  color: #969696;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 14px 0;
+}
+
+.info__phone a {
+  background-image: url(../img/icons/phone.svg);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  -webkit-transition: 0.23s;
+  transition: 0.23s;
+}
+
+.info__phone a:hover {
+  color: #fff;
+}
+
+.info__week::before, .info__week::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #969696;
+  margin: 0 10px;
+}
+
+.top__login {
+  background-image: url(../img/icons/log-in.svg);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  -webkit-transition: 0.23s;
+  transition: 0.23s;
+}
+
+.top__login:hover {
+  color: #fff;
+}
+
+.header {
+  font-family: 'PT Sans', sans-serif;
+  color: #969696;
+  background-color: #0f0f0f;
+}
+
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__item {
+  float: left;
+}
+
+.menu__link {
+  display: block;
+  padding: 30px 20px;
+  -webkit-transition: 0.23s;
+  transition: 0.23s;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.menu__link:hover {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.menu__link._active {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart {
+  background-image: url(../img/icons/cart.svg);
+}
+
+.search {
+  background-image: url(../img/icons/search.svg);
+}
+
+.cart, .search {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
