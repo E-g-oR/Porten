@@ -128,6 +128,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card + .card {
@@ -169,6 +171,8 @@ body {
   font-size: 18px;
   padding: 12px 28px;
   border: 1px solid #fff;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
 }
 
 .banner__offer {
@@ -191,7 +195,7 @@ body {
           justify-content: space-between;
 }
 
-.old-collection__img img {
+.old-collection__img img, .banner img {
   width: 45vw;
 }
 
@@ -208,6 +212,9 @@ body {
 .about__text {
   line-height: 150%;
   margin-bottom: 60px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .new-arrivals__body {

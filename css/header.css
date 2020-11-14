@@ -1,5 +1,5 @@
 .top__body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,7 +60,7 @@
 }
 
 .header {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #969696;
   background-color: #0f0f0f;
 }
@@ -120,9 +120,51 @@
   background-image: url(../img/icons/search.svg);
 }
 
-.cart, .search {
+.cart,
+.search {
   display: block;
   background-position: center;
   background-repeat: no-repeat;
   padding: 30px;
+}
+
+.sub-menu-button {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 10px 0px;
+}
+
+.sub-menu-button::before, .sub-menu-button::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  top: 50%;
+  width: 17px;
+}
+
+.sub-menu-button::before {
+  -webkit-transform: translateX(26%) rotate(40deg);
+          transform: translateX(26%) rotate(40deg);
+}
+
+.sub-menu-button::after {
+  -webkit-transform: translateX(100%) rotate(-40deg);
+          transform: translateX(100%) rotate(-40deg);
+}
+
+.sub-menu-button._menu_active::before {
+  -webkit-transform: translateX(100%) rotate(40deg);
+          transform: translateX(100%) rotate(40deg);
+}
+
+.sub-menu-button._menu_active::after {
+  -webkit-transform: translateX(27%) rotate(-40deg);
+          transform: translateX(27%) rotate(-40deg);
 }
