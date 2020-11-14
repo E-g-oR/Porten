@@ -23,11 +23,15 @@ const Top = () => {
   </div>
 `
 }
-if (MatchMedia) {
-  Menu.insertAdjacentHTML('beforeend', Top());
-}
+
 
 SubMenuButton.addEventListener('click', () => {
   SubMenuButton.classList.toggle('_menu_active');
   Menu.classList.toggle('_menu_active');
+  if (!Menu.lastElementChild.classList.contains('top') && window.innerWidth <= 570) {
+    Menu.insertAdjacentHTML('beforeend', Top());
+  } else if (Menu.lastElementChild.classList.contains('top') && window.innerWidth > 570) {
+    Menu.lastChild.remove();
+  }
+
 })
